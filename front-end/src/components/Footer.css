@@ -1,0 +1,26 @@
+.col > p {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.col > p:hover {
+  opacity: 1;
+}
+
+.info-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-media-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.background-color-footer{
+  background-color: #6e7de4;
+}

@@ -1,0 +1,37 @@
+.search-bar {
+  outline: none;
+  border: none;
+}
+
+.search-box {
+  border: 1px solid #000000fb;
+  border-radius: 20px;
+  padding: 3px;
+  overflow: hidden;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 63px;
+  background-color: #fff;
+}
+
+.search-btn {
+  margin-bottom: 2px;
+}
+
+.container-listbook {
+  position: relative;
+  padding: 52px 0;
+  min-height: calc(100vh - 52px);
+}
+
+.filters-container > .nav-tabs .nav-link.active {
+  color: #fff;
+  color: black;
+  margin-bottom: 2px;
+  border-radius: 10px;
+}
+
+.listbook-wrapper {
+  background-color: var(--background-color);
+}

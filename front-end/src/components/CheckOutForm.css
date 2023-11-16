@@ -1,0 +1,8 @@
+.badge-ship {
+  margin: auto;
+  margin-top: 3px;
+  height: 30px;
+  width: 450px;
+  color: rgb(255, 255, 255) !important;
+  font-size: 16px;
+}

@@ -1,0 +1,105 @@
+.logout-btn {
+  margin: 0 auto;
+  display: block !important;
+}
+
+.logo {
+  width: 50px;
+}
+
+.background-color-nav{
+  background-color: #6e7de4;
+}
+
+#cartcount {
+  font-size: 10px;
+  background-color: red;
+  color: white;
+  padding: 2px 4px;
+  vertical-align: top;
+  margin-left: -8px;
+  border-radius: 50%;
+  margin-top: -5px;
+}
+
+.badge {
+  padding-left: 9px;
+  padding-right: 9px;
+  border-radius: 9px;
+}
+
+.fa-shopping-cart {
+  font-size: 20px;
+}
+
+.notifications-container {
+  padding: 20px;
+  max-height: 200px;
+  overflow-y: scroll;
+  border: 1px solid gray;
+  background-color: white;
+  width: 200px;
+  z-index: 99;
+}
+
+.fas[data-count] {
+  position: relative;
+}
+
+.fa-bell {
+  font-size: 1.5em;
+}
+
+.fas[data-count]:after {
+  position: absolute;
+  right: -0.75em;
+  top: -0.75em;
+  content: attr(data-count);
+  padding: 0.5em;
+  border-radius: 10em;
+  line-height: 0.9em;
+  color: white;
+  background-color: red;
+  text-align: center;
+  min-width: 2em;
+  font: bold 0.4em sans-serif;
+}
+
+.btn-hover {
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 1.25rem;
+  opacity: 0.65;
+}
+
+.btn-hover:hover {
+  color: #000;
+  opacity: 1;
+}
+
+.navbar-wrapper {
+  z-index: 10000;
+  top: 0;
+  width: 100%;
+  position: fixed !important;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#basic-nav-dropdown,
+.icon-bag {
+  color: #fff !important;
+  opacity: 0.75;
+}
+
+#basic-nav-dropdown:hover,
+.icon-bag:hover {
+  opacity: 1;
+}
+
+.login-btn {
+  opacity: 0.75;
+}
+
+.login-btn:hover {
+  opacity: 1;
+}

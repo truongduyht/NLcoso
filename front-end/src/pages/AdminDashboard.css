@@ -1,0 +1,16 @@
+.adminDashboard-wrapper {
+  padding-top: 68px;
+  padding-bottom: 50px;
+  background-color: var(--background-color);
+  min-height: 100vh;
+}
+
+.col-content-dashboard {
+  border-radius: 10px;
+  height: 100%;
+}
+
+.col-action-dashboard {
+  background-color: aliceblue;
+  border-radius: 10px;
+}

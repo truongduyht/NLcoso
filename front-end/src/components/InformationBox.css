@@ -1,0 +1,7 @@
+.card-info {
+  border-radius: 8px !important;
+  background-color: #6e7de4 !important;
+  margin-top: 68px;
+  border: 2px solid var(--primary-color) !important;
+  color: black;
+}

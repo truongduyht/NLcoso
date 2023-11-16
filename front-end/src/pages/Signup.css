@@ -1,0 +1,80 @@
+.signup__form--container,
+.login__form--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - 53px);
+  justify-content: center;
+}
+
+.form-wrapper {
+  border-radius: 10px;
+  padding: 10px 10px;
+}
+
+.col-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  background-color: var(--background-color);
+  margin-top: 53px;
+}
+
+.login-container::after {
+  content: "";
+  background-color: rgb(71, 67, 67);
+}
+
+.card-signup {
+  width: 500px;
+  min-height: 500px;
+  transition: all 0.2s;
+  position: relative;
+  cursor: pointer;
+}
+
+.card-login {
+  width: 500px;
+  min-height: 340px;
+  transition: all 0.2s;
+  position: relative;
+  cursor: pointer;
+}
+
+.card-signup-inner {
+  width: inherit;
+  height: inherit;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+}
+
+/* Button */
+.btn-signup {
+  padding: 6px 10px;
+  border: unset;
+  border-radius: 15px;
+  z-index: 1;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+}
+
+.btn-signup::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+}
+
+.btn-signup:hover {
+  color: #ffffff;
+  background-color: black;
+}

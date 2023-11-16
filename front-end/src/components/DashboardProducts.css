@@ -1,0 +1,13 @@
+.dashboard-product-preview {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.edit-wrapper {
+  padding-top: 18px;
+}
+
+.bg-modal {
+  background-color: white;
+}

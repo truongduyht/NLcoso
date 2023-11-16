@@ -1,0 +1,41 @@
+.orderPage-wrapper {
+  background-color: var(--background-color);
+  min-height: 100vh;
+  padding-top: 78px;
+}
+
+.table-wrapper {
+  max-height: 78vh;
+  overflow-y: scroll;
+  box-shadow: 0 0 0 2px var(--primary-color), 8px 8px 0 0 var(--primary-color);
+  border-radius: 10px;
+  background-color: var(--group-box-color);
+}
+
+.order-title {
+  padding: 5px 0;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+  color: var(--primary-color);
+}
+
+.table-wrapper::-webkit-scrollbar {
+  border-radius: 20px;
+  width: 7px;
+  background-color: #ffd8a900;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #f1a76100;
+}
+
+.orderPage-wrapper-null {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-modal {
+  background-color: white;
+}

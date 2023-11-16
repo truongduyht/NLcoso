@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: "Cabin", sans-serif !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.fs-14 {
+  font-size: 14px !important;
+}
+
+.fs-16 {
+  font-size: 16px !important;
+}
+
+.fs-18 {
+  font-size: 18px !important;
+}
+
+.fs-22 {
+  font-size: 22px !important;
+}
+
+.fs-30 {
+  font-size: 30px !important;
+}
+
+.text-description {
+  color: #858585;
+}
+
+.text-white-custom {
+  color: #fff !important;
+}
+
+.form-control {
+  background-color: var(--input-color) !important;
+}
+
+.form-control:disabled {
+  background-color: var(--input-disabled) !important;
+  color: #5e5e5e !important;
+}
+
+.title {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  border-radius: 10px;
+  padding: 5px 0;
+  background-color: var(--secondary-color);
+}
+
+.modal-content {
+  background-color: var(--background-color) !important;
+}

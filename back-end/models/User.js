@@ -21,7 +21,7 @@ const UserSchema = mongoose.Schema(
       },
     },
 
-    mssv: {
+    studentID: {
       type: String,
       required: [true, "Không được để trống"],
     },

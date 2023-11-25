@@ -217,7 +217,6 @@ function OrdersPage() {
                           {order.ship ? (
                             <Badge bg="none" text="dark">
                               Giao tận nơi{" "}
-                              <UilRocket style={{ height: "20px" }}></UilRocket>
                             </Badge>
                           ) : (
                             <Badge bg="none" text="dark">

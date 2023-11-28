@@ -2,8 +2,7 @@ const router = require("express").Router();
 const User = require("../models/User");
 const Order = require("../models/Order");
 
-// Sing Up
-// Use async, await for get data
+// Sign Up
 router.post("/signup", async (req, res) => {
   const { name, email, studentID, password } = req.body;
   try {

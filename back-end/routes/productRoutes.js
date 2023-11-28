@@ -6,7 +6,6 @@ const User = require("../models/User");
 router.get("/", async (req, res) => {
   try {
     const sort = { _id: -1 };
-    // Sắp xếp product theo thứ tự mới nhất ở đầu tiên
     const products = await Product.find().sort(sort);
     res.status(200).json(products);
   } catch (e) {
@@ -45,7 +44,6 @@ router.post("/", async (req, res) => {
 });
 
 // update product
-
 router.patch("/:id", async (req, res) => {
   const { id } = req.params;
   try {
@@ -77,7 +75,6 @@ router.patch("/:id", async (req, res) => {
 });
 
 // delete product
-
 router.delete("/:id", async (req, res) => {
   const { id } = req.params;
   const { user_id } = req.body;
@@ -85,8 +82,6 @@ router.delete("/:id", async (req, res) => {
     const user = await User.findById(user_id);
     if (!user.isAdmin) return res.status(401).json("Bạn không phải là admin");
     await Product.findByIdAndDelete(id);
-
-    // Sắp xếp product theo thứ tự mới nhất ở đầu tiên
     const products = await Product.find().sort({ _id: -1 });
     res.status(200).json(products);
   } catch (e) {
@@ -123,7 +118,6 @@ router.get("/category/:category", async (req, res) => {
 });
 
 // cart routes
-
 router.post("/add-to-cart", async (req, res) => {
   const { userId, productId, author } = req.body;
 

@@ -3,7 +3,7 @@ import "./InformationBox.css";
 
 function InformationBox({ name, email, studentID, orders }) {
   if (orders.length == 0) {
-    return <h1>Bạn chưa có order nào</h1>;
+    return <h1>Bạn chưa mượn</h1>;
   }
 
   let count = 0;

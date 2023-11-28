@@ -1,9 +1,8 @@
 const router = require("express").Router();
-const Order = require("../models/Order");
 const User = require("../models/User");
 const Product = require("../models/Product");
+const Order = require("../models/Order");
 
-//creating an order
 router.post("/", async (req, res) => {
   const { userId, cart, phone, address } = req.body;
   const { returnDate, takeBookDate, ship } = req.body;
@@ -36,10 +35,8 @@ router.post("/", async (req, res) => {
   }
 });
 
-// getting all orders;
 router.get("/", async (req, res) => {
   try {
-    // get owner object contain email, name, studentID, order fields
     const orders = await Order.find().populate("owner", [
       "email",
       "name",
@@ -51,8 +48,6 @@ router.get("/", async (req, res) => {
     res.status(400).json(e.message);
   }
 });
-
-//shipping order
 
 router.patch("/:id/mark-shipped", async (req, res) => {
   const { ownerId } = req.body;
@@ -102,14 +97,11 @@ router.patch("/:id/mark-return-book", async (req, res) => {
   }
 });
 
-//Cancel order
 router.delete("/:id", async (req, res) => {
   const { id } = req.params;
   const { userId, products } = req.body;
   try {
     const user = await User.findById(userId);
-
-    // Tăng số lượng sản phẩm trong giỏ hàng lên 1 (nếu có)
     await Promise.all(
       products.map(async (productId) => {
         const p = await Product.findById(productId);
@@ -128,7 +120,6 @@ router.delete("/:id", async (req, res) => {
   }
 });
 
-// edit order
 router.patch("/:id/edit", async (req, res) => {
   const { id } = req.params;
   const { returnDate, takeBookDate } = req.body;

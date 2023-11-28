@@ -22,7 +22,6 @@ router.post("/signup", async (req, res) => {
 });
 
 // login
-
 router.post("/login", async (req, res) => {
   const { email, password } = req.body;
   try {
@@ -34,7 +33,6 @@ router.post("/login", async (req, res) => {
 });
 
 // get users;
-
 router.get("/", async (req, res) => {
   try {
     const users = await User.find({ isAdmin: false }).populate("orders");
@@ -45,7 +43,6 @@ router.get("/", async (req, res) => {
 });
 
 // get all user orders
-
 router.get("/:id/orders", async (req, res) => {
   const { id } = req.params;
   try {
@@ -75,14 +72,8 @@ router.delete("/:id/delete-user", async (req, res) => {
     if (admin && !admin.isAdmin) {
       return res.status(400).send("Bạn không phải là admin");
     }
-
-    // Xóa tất cả các order có owner là user cần xoá
     await Order.deleteMany({ owner: id });
-
-    // Xóa user
     await User.findByIdAndDelete(id);
-
-    // Lấy danh sách user còn lại
     const users = await User.find({ isAdmin: false }).populate("orders");
     res.json(users);
   } catch (e) {

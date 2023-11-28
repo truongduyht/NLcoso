@@ -1,7 +1,5 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-
 // create the api
-
 export const appApi = createApi({
   reducerPath: "appApi",
   baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:8080" }),
@@ -106,7 +104,7 @@ export const appApi = createApi({
       },
     }),
 
-    // edit order
+    //delete user
     deleteUser: builder.mutation({
       query: ({ userId, admin }) => ({
         url: `/users/${userId}/delete-user`,

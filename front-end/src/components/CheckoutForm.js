@@ -96,7 +96,6 @@ function CheckoutForm() {
                 className="fs-14"
                 type="date"
                 required
-                // onChange={(e) => setReturnDate(e.target.value)}
                 onChange={(e) => checkDate(e)}
               />
             </Form.Group>

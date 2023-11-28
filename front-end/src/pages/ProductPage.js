@@ -43,23 +43,6 @@ function ProductPage() {
     568: { items: 2 },
     1024: { items: 3 },
   };
-  // const images = product.pictures.map((picture) => (
-  //   <img
-  //     className="product__carousel--image"
-  //     src={picture.url}
-  //     onDragStart={handleDragStart}
-  //   />
-  // ));
-
-  // let similarProducts = [];
-  // if (similar) {
-  //   similarProducts = similar.map((product, idx) => (
-  //     <div className="item" data-value={idx}>
-  //       <SimilarProduct {...product} />
-  //     </div>
-  //   ));
-  // }
-
   useEffect(()=> {
     if (product && similar) {
       const similarProducts = similar.map((product, idx) => (
@@ -80,12 +63,6 @@ function ProductPage() {
     setSimilarProductA(similarProducts);
     }
     
-    
-  
-      // console.log(similarProducts)
-    
-    
-  
   }, [product, similar]) 
 
   return (
@@ -104,9 +81,6 @@ function ProductPage() {
               controlsStrategy="alternate"
             />
             }
-             
-            
-           
           </Col>
           <Col></Col>
           <Col lg={6} className="pt-4">

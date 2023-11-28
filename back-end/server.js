@@ -23,8 +23,8 @@ db.connection();
 // middleware
 // expressJS
 app.use(cors());
-app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.use("/users", userRoutes);
 app.use("/products", productRoutes);

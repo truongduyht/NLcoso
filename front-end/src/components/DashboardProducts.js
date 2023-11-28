@@ -39,7 +39,6 @@ function DashboardProducts() {
     }
     return false;
   }
-  console.log(productShow);
 
   function TableRow({ pictures, _id, name, author, quantity }) {
     return (
